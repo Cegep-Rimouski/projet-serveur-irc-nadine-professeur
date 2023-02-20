@@ -1,2 +1,11 @@
-# projet-serveur-irc-nadine-professeur
-projet-serveur-irc-nadine-professeur created by GitHub Classroom
+# Procédure d'installation du serveur IRC
+
+## Installation du service inspircd
+
+Installation du service et ouverture des ports.
+
+sudo apt-get update
+sudo apt install inspircd
+sudo ufw status verbose
+sudo ufw allow 6667/tcp
+sudo ufw reload
