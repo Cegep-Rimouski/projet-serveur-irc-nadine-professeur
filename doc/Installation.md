@@ -55,7 +55,7 @@ Namecheap :
 ```
 + CNAME   irc   little.courses.
 ```
-Permettre à inspircd d'accepter les connexion externes avec le masque de <bind>
+Permettre à inspircd d'accepter les connexion externes avec le masque de &lt;bind&gt;
 
 ```xml
 <bind address="" port="6667" type="clients">
@@ -64,5 +64,8 @@ Permettre à inspircd d'accepter les connexion externes avec le masque de <bind>
 ```bash
 sudo service inspircd restart
 ```
+Tester avec weechat à partir d'un ordinateur linux local
+
+=> ATTENTION - s'assurer d'être sur un réseau qui ne bloque pas les ports
         
 
