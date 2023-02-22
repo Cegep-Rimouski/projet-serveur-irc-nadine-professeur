@@ -31,6 +31,11 @@ sudo jed /etc/inspircd/inspircd.conf
        nick="superadmin"
        email="nadineducegep@gmail.com">
   ```
+
+```bash
+sudo service inspircd restart
+```
+
 ## Tester avec un client
 
 Installer weechat et se connecter au serveur localement
@@ -42,3 +47,22 @@ weechat
 > /connect ici
 > /join #cafe
 ```
+## Ouvrir sur le monde
+
+Rediriger les DNS de la nouvelle url
+
+Namecheap :
+```
++ CNAME   irc   little.courses.
+```
+Permettre à inspircd d'accepter les connexion externes avec le masque de <bind>
+
+```xml
+<bind address="" port="6667" type="clients">
+```     
+        
+```bash
+sudo service inspircd restart
+```
+        
+
